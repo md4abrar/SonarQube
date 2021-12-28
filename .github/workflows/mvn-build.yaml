@@ -34,5 +34,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar
-      - name: jacoco-badge-generator
-        uses: cicirello/jacoco-badge-generator@v2.3.0
